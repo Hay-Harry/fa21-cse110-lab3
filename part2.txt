@@ -1,2 +1,12 @@
 Fill in the passphrases here.
-dssaaa
+question 1: greenEggsAndHam
+Question 8 passcode: coolcoolcool
+Question 9 passcode: 2020sucked
+Passcode: JavaScriptRules
+Passcode for question 3: HTMLRocks
+Question 7 Passcode: YouFoundMe
+question 10.jpg: listenToTheBlackKeys
+Question 5 Passcode:SvelteBeatsReact
+question12Passcode="iLoveWebDev"
+"question11" content="a11yComesFirst
+question2="iHateCplusplus"
