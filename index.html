@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSE hang out Meeting Minutes</title>
+        <link rel="icon" type="image/x-icon" href="cat.ico"/>
+    </head>
+
+    <body>
+        <header>
+            <div>Relative links</div>
+            <nav>
+                <ul>
+                    <li><a href="https://ucsd.edu/">UCSD main page</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML basics</a></li>
+                    <li><a href="https://www.google.com/">google</a></li>
+                </ul>
+            </nav>
+         </header>
+
+        <main>
+            <h1>Meeting minutes</h1>
+            <img  
+            src="pc.png"
+            alt="PC"
+            width="150"
+            />
+            <p>We spend 3 hours this morning discussing what and where to eat lunch. 
+                <em>Pathfinder</em> says he wants to eat fish, Jack says he hates fish. 
+                Valkyrie says we can eat burger, Jack says he wants to eat sandwich. 
+                Gibraltar wants some spicy food, Jack refuses. 
+                After 3 hours of discussion, they decided to eat the <strong>spicy fish burger</strong>. 
+                Who is jack? I don't know, at least he is not in the game of APEX.</p>
+            <details>
+                <summary>
+                    Why I am not in the meeting?
+                </summary>
+                    Because I am making up the story.
+            </details>
+
+            
+
+            <h2 id="what-to-eat?">What to eat?</h2>
+            <fieldset>
+                <legend>Make your choice!</legend>
+
+                <ol>
+                    <li><input type="checkbox" /> Pizza</li>
+                    <li><input type="radio" /> Anything</li>
+                    <li><input type="checkbox" /> Eat at home</li>
+                    <li><input type="text" /> Other than Pizza?</li>
+                    <li><input type="date" /> Date?</li>
+                </ol>
+            </fieldset>
+            
+            <h3 id="where-to-meet?">Where to meet?</h3>
+            <p>We usually meet at the <b>front door</b> of the <strong>Geisel Library</strong>.</p>
+
+            <p>Backgroud muisc during meeting</p>
+            <audio
+                controls
+                src="AcousticLove.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+
+            <p>Video we like</p>
+            <video controls width="450">
+
+                <source src="Horses.mp4" type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <br>
+            <label for="story">Tell us your story:</label>
+
+            <textarea id="story" name="story" rows="10" cols="50">
+                Begin here..
+            </textarea>
+            <br>
+            <label for="games">Game we play</label>
+            <input list="steamGames" id="games" name="games"/>
+            <datalist id="steamGames">
+                <option value="APEX">
+                <option value="Battlefield">
+                <option value="Rainbow Six Siege">
+            </datalist>
+
+            <br>
+
+            <label for="favorite-color">Choose your favorite color</label>
+            <select name="color" id="favorite-color">
+                <option value="black">black</option>
+                <option value="white">white</option>
+                <option value="red">red</option>
+                <option value="purple">purple</option>
+                <option value="green">green</option>
+            </select>
+
+        </main>  
+
+        <footer>
+            <section>
+                <h5 id="contact">Contact</h5>
+                <form onsubmit="alert('email sent')">
+                    <input type="text" placeholder="Enter your email address"/>
+                    <button>Submit</button>
+                </form>
+            </section>
+
+            <section>
+                <h5 id="location">location</h5>
+                <p><em>9500 Gilman Dr, La Jolla, CA 92093</em></p>
+            </section>
+            <br>
+            <hr>
+            <div>&copy; Hanran Yang at <i class="latin">UCSD.edu</i></div>
+        </footer>
+    </body>
+</html>
