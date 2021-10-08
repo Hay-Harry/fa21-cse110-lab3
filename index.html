@@ -1,122 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSE hang out Meeting Minutes</title>
-        <link rel="icon" type="image/x-icon" href="cat.ico"/>
-        <link rel="stylesheet" href="indexstyle.css">
-    </head>
 
-    <body>
-        <header>
-            <div style="color:pink;text-align:justify;">Relative links</div> <!--inline CSS-->
-            <nav>
-                <ul id="webLinkList">
-                    <li><a href="https://ucsd.edu/">UCSD main page</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML basics</a></li>
-                    <li><a href="https://www.google.com/">google</a></li>
-                </ul>
-            </nav>
-         </header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE hang out Meeting Minutes</title>
+    <link rel="icon" type="image/x-icon" href="cat.ico" />
+    <link rel="stylesheet" href="indexstyle.css">
 
-        <main>
-            <h1>Meeting minutes</h1>
-            <img  
-            src="pc.png"
-            alt="PC"
-            width="150"
-            />
-            <p>We spend 3 hours this morning discussing what and where to eat lunch. 
-                <em>Pathfinder</em> says he wants to eat fish, Jack says he hates fish. 
-                Valkyrie says we can eat burger, Jack says he wants to eat sandwich. 
-                <p id="gibraltar">Gibraltar</p> wants some spicy food, Jack refuses. 
-                After 3 hours of discussion, they decided to eat the <strong>spicy fish burger</strong>. 
-                Who is jack? I don't know, at least he is not in the game of <p id="apex">APEX</p>.</p>
+</head>
+
+<body>
+    <header>
+        <div style="color:pink;text-align:justify;">Relative links</div>
+        <!--inline CSS-->
+        <nav>
+            <ul id="webLinkList">
+                <li><a href="https://ucsd.edu/">UCSD main page</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML
+                        basics</a></li>
+                <li><a href="https://www.google.com/">google</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Meeting minutes</h1>
+        <div class="meetingContainer">
+
+            <div class="apexStroy">
+                <p id="story">We spend 3 hours this morning discussing what and where to eat lunch.
+                    <em>Pathfinder</em> says he wants to eat fish, Jack says he hates fish.
+                    Valkyrie says we can eat burger, Jack says he wants to eat sandwich.
+                <span id="gibraltar">Gibraltar</span> wants some spicy food, Jack refuses.
+                After 3 hours of discussion, they decided to eat the <strong>spicy fish burger</strong>.
+                Who is jack? I don't know, at least he is not in the game of <span id="apex">APEX</span>.</p>
+            </div>
             <details>
                 <summary>
                     Why I am not in the meeting?
                 </summary>
-                    <p id="answerForSum">Because I am making up the story.</p>
+                <p id="answerForSum">Because I am making up the story.</p>
             </details>
+        </div>
 
-            
 
-            <h2 id="what-to-eat">What to eat?</h2>
-            <fieldset>
-                <legend>Make your choice!</legend>
+        <h2 id="what-to-eat">What to eat?</h2>
+        <fieldset>
+            <legend>Make your choice!</legend>
 
-                <ol>
-                    <li><input type="checkbox" /> Pizza</li>
-                    <li><input type="radio" /> Anything</li>
-                    <li><input type="checkbox" /> Eat at home</li>
-                    <li><input type="text" /> Other than Pizza?</li>
-                    <li><input type="date" /> Date?</li>
-                </ol>
-            </fieldset>
-            
+            <ol>
+                <li class="input-list"><input type="checkbox" /> Pizza</li>
+                <li class="input-list"><input type="radio" /> Anything</li>
+                <li class="input-list"><input type="checkbox" /> Eat at home</li>
+                <li><input type="text" /> Other than Pizza?</li>
+                <li><input type="date" /> Date?</li>
+            </ol>
+        </fieldset>
+
+        <p><b>Favourite Restaurant:</b></p>
+        <div class="FavouriteRestaurant">
+            <div class="FavouriteRestaurantItem">In-N-Out Burger</div>
+            <div class="FavouriteRestaurantItem">California pizza kitchen</div>
+            <div class="FavouriteRestaurantItem">Din Tai Fung</div>
+            <div class="FavouriteRestaurantItem">U2 cafe</div>
+            <div class="FavouriteRestaurantItem">Gen Korean BBQ House</div>
+            <div class="FavouriteRestaurantItem">PHO</div>
+        </div>
+
+        <div class="placeToMeet">
             <h3 id="where-to-meet">Where to meet?</h3>
-            <p>We usually meet at the <b>front door</b> of the <strong>Geisel Library</strong>.</p>
 
-            <p>Backgroud muisc during meeting</p>
-            <audio
-                controls
-                src="AcousticLove.mp3">
+            <p><strong>Geisel Library</strong></p>
+
+            <!-- <h3 id="where-to-park">Where to park?</h3> -->
+            <p><b>Gilman parking structure</b></p>
+            <p><b>Price center</b></p>
+            <p><b>>UTC</b></p>
+        </div>
+        <p><b>Weather:</b></p>
+        <div class="weather">
+            <div>Mon 64F Sunny</div>
+            <div>Tue 69F Cloudy</div>
+            <div>Wed 78F Sunny</div>
+            <div>Thu 66F Mostly Sunny</div>
+            <div>Fri 70F Sunny</div>
+            <div>Sat 65F Sunny</div>
+            <div>Sun 69F Sunny</div>
+        </div>
+
+        <div class="grid-media">
+            <div class="media-item">
+                <p id="BGM">Backgroud muisc during meeting</p>
+                <audio controls src="AcousticLove.mp3">
                     Your browser does not support the
                     <code>audio</code> element.
-            </audio>
+                </audio>
+            </div>
 
-            <p>Video we like</p>
-            <video controls width="450">
+            <div class="media-item">
+                <p>Video we like</p>
+                <video controls width="450">
 
-                <source src="Horses.mp4" type="video/mp4">
-            
-                Sorry, your browser doesn't support embedded videos.
-            </video>
-            <br>
-            <label for="story">Tell us your story:</label>
+                    <source src="Horses.mp4" type="video/mp4">
 
-            <textarea id="story" name="story" rows="10" cols="50">
-                Begin here..
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+            <img class="media-item" src="pc.png" alt="PC" width="150" />
+        </div>
+        <br>
+
+        <div class="grid-selector">
+            <div class="grid-selector-item">
+                <label for="Yourstory">Any thing you want to play:</label>
+
+                <textarea id="Yourstory" name="story" rows="10" cols="50">
+                Anything!
             </textarea>
-            <br>
-            <label for="games">Game we play</label>
-            <input list="steamGames" id="games" name="games"/>
-            <datalist id="steamGames">
-                <option value="APEX">
-                <option value="Battlefield">
-                <option value="Rainbow Six Siege">
-            </datalist>
+            </div>
+            <div class="grid-selector-item">
+                <label for="games">Join ours games</label>
+                <input list="steamGames" id="games" name="games" />
+                <datalist id="steamGames">
+                    <option value="APEX">
+                    <option value="Battlefield">
+                    <option value="Rainbow Six Siege">
+                </datalist>
+            </div>
 
-            <br>
+            <div class="grid-selector-item">
+                <label for="favorite-color">Choose your team color</label>
+                <select name="color" id="favorite-color">
+                    <option value="black">black</option>
+                    <option value="white">white</option>
+                    <option value="red">red</option>
+                    <option value="purple">purple</option>
+                    <option value="green">green</option>
+                </select>
+            </div>
+        </div>
+    </main>
 
-            <label for="favorite-color">Choose your favorite color</label>
-            <select name="color" id="favorite-color">
-                <option value="black">black</option>
-                <option value="white">white</option>
-                <option value="red">red</option>
-                <option value="purple">purple</option>
-                <option value="green">green</option>
-            </select>
+    <footer>
+        <section>
+            <h5 class="contact">Contact</h5>
+            <form onsubmit="alert('email sent')">
+                <input type="text" placeholder="Enter your email address" />
+                <button>Submit</button>
+            </form>
+        </section>
 
-        </main>  
+        <p>GroupMemberContactList</p>
+        <div class="GroupMemberContactList">
+            <div>Pathfinder@gmail.com</div>
+            <div>Gibraltar@gmail.com</div>
+            <div>Valkyrie@gmail.com</div>
+            <div>Jack@UCSD.edu</div>
+        </div>
 
-        <footer>
-            <section>
-                <h5 id="contact">Contact</h5>
-                <form onsubmit="alert('email sent')">
-                    <input type="text" placeholder="Enter your email address"/>
-                    <button>Submit</button>
-                </form>
-            </section>
+        <section>
+            <h5 id="location">location</h5>
+            <p class="address"><em>9500 Gilman Dr, La Jolla, CA 92093</em></p>
+        </section>
+        <br>
+        <hr>
+        <div>&copy; Hanran Yang at <i class="latin">UCSD.edu</i></div>
 
-            <section>
-                <h5 id="location">location</h5>
-                <p class="address"><em>9500 Gilman Dr, La Jolla, CA 92093</em></p>
-            </section>
-            <br>
-            <hr>
-            <div>&copy; Hanran Yang at <i class="latin">UCSD.edu</i></div>
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
