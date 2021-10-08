@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSE hang out Meeting Minutes</title>
         <link rel="icon" type="image/x-icon" href="cat.ico"/>
+        <link rel="stylesheet" href="indexstyle.css">
     </head>
 
     <body>
         <header>
-            <div>Relative links</div>
+            <div style="color:pink;text-align:justify;">Relative links</div> <!--inline CSS-->
             <nav>
-                <ul>
+                <ul id="webLinkList">
                     <li><a href="https://ucsd.edu/">UCSD main page</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML basics</a></li>
                     <li><a href="https://www.google.com/">google</a></li>
@@ -29,19 +30,19 @@
             <p>We spend 3 hours this morning discussing what and where to eat lunch. 
                 <em>Pathfinder</em> says he wants to eat fish, Jack says he hates fish. 
                 Valkyrie says we can eat burger, Jack says he wants to eat sandwich. 
-                Gibraltar wants some spicy food, Jack refuses. 
+                <p id="gibraltar">Gibraltar</p> wants some spicy food, Jack refuses. 
                 After 3 hours of discussion, they decided to eat the <strong>spicy fish burger</strong>. 
-                Who is jack? I don't know, at least he is not in the game of APEX.</p>
+                Who is jack? I don't know, at least he is not in the game of <p id="apex">APEX</p>.</p>
             <details>
                 <summary>
                     Why I am not in the meeting?
                 </summary>
-                    Because I am making up the story.
+                    <p id="answerForSum">Because I am making up the story.</p>
             </details>
 
             
 
-            <h2 id="what-to-eat?">What to eat?</h2>
+            <h2 id="what-to-eat">What to eat?</h2>
             <fieldset>
                 <legend>Make your choice!</legend>
 
@@ -54,7 +55,7 @@
                 </ol>
             </fieldset>
             
-            <h3 id="where-to-meet?">Where to meet?</h3>
+            <h3 id="where-to-meet">Where to meet?</h3>
             <p>We usually meet at the <b>front door</b> of the <strong>Geisel Library</strong>.</p>
 
             <p>Backgroud muisc during meeting</p>
@@ -111,7 +112,7 @@
 
             <section>
                 <h5 id="location">location</h5>
-                <p><em>9500 Gilman Dr, La Jolla, CA 92093</em></p>
+                <p class="address"><em>9500 Gilman Dr, La Jolla, CA 92093</em></p>
             </section>
             <br>
             <hr>
