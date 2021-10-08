@@ -1,0 +1,66 @@
+body {
+    background-color: lightblue; /*change background color*/
+}
+
+* {
+    text-align:left;
+}
+
+h1 {
+    color:rgb(173, 0, 253); /* red, green, blue, alpha values */
+
+    text-decoration:pink underline overline;
+    text-align: justify;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 180px;
+
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+    border-style: dashed;
+    border-radius: 50px;
+    border-width: 10px;
+    border-color: orange;
+
+}
+
+#gibraltar {
+    color: red;
+    display: inline-block;
+}
+
+#apex {
+    color: red;
+    display: inline;
+}
+
+#answerForSum {
+    text-decoration: red line-through;
+}
+
+.address {
+    background-color: #FdF;
+    margin: auto;
+}
+#where-to-meet {
+    background-color:hsl(0, 100%, 50%);
+    margin: 150px 150px 50px 180px;
+    padding: 50px 50px 50px 50px;
+    border: 1px solid #000000;
+}
+
+img{
+    height:auto;
+    width:auto;
+    max-width: 200px;
+    min-width: 50px;
+   
+}
+
+
+
+
