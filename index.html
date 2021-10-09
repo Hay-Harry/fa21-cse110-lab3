@@ -7,7 +7,13 @@
     <title>CSE hang out Meeting Minutes</title>
     <link rel="icon" type="image/x-icon" href="cat.ico" />
     <link rel="stylesheet" href="indexstyle.css">
-
+    
+    <style> /*Internal CSS*/
+        #email-input {
+            color: brown;
+        }
+    
+    </style>
 </head>
 
 <body>
@@ -146,7 +152,7 @@
         <section>
             <h5 class="contact">Contact</h5>
             <form onsubmit="alert('email sent')">
-                <input type="text" placeholder="Enter your email address" />
+                <input id="email-input" type="text" placeholder="Enter your email address" />
                 <button>Submit</button>
             </form>
         </section>
